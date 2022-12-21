@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/dockerfile
+    ports:
+      - "80:8000"
+    command: ["python", "/home/app/main.py", "runserver", "0.0.0.0:8000"]
+    volumes:
+      - ./backend:/home/app

@@ -1,0 +1,2 @@
+[MASTER]
+disable=c0114, # missing-module-docstring
